@@ -3,7 +3,10 @@
 MKFILE_DIR := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 SHELL := /bin/bash
 
-
+ifeq ($(PARENDI_ROOT),)
+  $(info PARENDI_ROOT is not set, setting it myself...)
+  PARENDI_ROOT := ${MKFILE_DIR}/../../parendi
+endif
 
 VERILATOR_EXEC ?= verilator
 VERIPOPLAR_EXEC ?= ${PARENDI_ROOT}/bin/verilator_bin
