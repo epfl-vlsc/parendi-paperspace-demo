@@ -1,0 +1,13 @@
+**/obj_dir*
+**/*.out
+**/filelist*.f
+**/.gdb_history
+**/*.txt
+**/*.csv
+**/*.png
+**/*.pdf
+**/*.svg
+workloads/src/rocket/
+chipyard.example.simulation.*.tar.gz
+.vscode
+*.tar.gz
