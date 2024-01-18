@@ -47,7 +47,7 @@ There is also a bunch of compilation stats:
 less obj_dir_nocfg_ipu_1472_1_noflag/VMain__stats.txt
 ```
 
-## Running Other simulations
+## Multi-IPU Simulation
 You can run other simulations; they are categorized based on their size.
 In case you want to run a multi-IPU simulation, you need to set the `TILE` variable when calling `make`:
 
@@ -57,6 +57,14 @@ make build_ipu TILES=2944 # two IPUs
 ./obj_dir_nocfg_ipu_2944_1_noflag/VMain +max-cycles=1000000
 ```
 
+
+You can also pass extra flags to Parendi with `EXTRA_IPU_FLAGS`
+```bash
+make build_ipu TILES=2944 EXTRA_IPU_FLAGS='-fno-inter-ipu-comm'
+```
+This disables multi-IPU communication optimization and unsurprisingly makes simulation run slower.
+
+TODO: give a list of all the possible flags and optimizations.
 
 
 
