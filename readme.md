@@ -1,5 +1,6 @@
-# Parendi demo on Paperspace Cloud IPUs
 
+
+# Parendi demo on Paperspace Cloud IPUs
 You need a [Paperspace](https://paperspace.com) account to follow this demo.
 You can use an M2000 machine with 4 IPUs for free for 6 hours, and this demo should take less than that. Follow [this](paperspace.md) guide to creating an IPU instance.
 ## Building Parendi
@@ -68,4 +69,8 @@ TODO: give a list of all the possible flags and optimizations.
 
 
 
+
+<p align='center'>
+    <img src="docs/logo_rendered.png", width='640', align='middle'>
+</p>
 
