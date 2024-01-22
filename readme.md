@@ -65,6 +65,8 @@ make build_ipu TILES=2944 EXTRA_IPU_FLAGS='-fno-inter-ipu-comm'
 ```
 This disables multi-IPU communication optimization and unsurprisingly makes simulation run slower.
 
+
+### MORE EXAMPLES ARE COMING
 TODO: give a list of all the possible flags and optimizations.
 
 
