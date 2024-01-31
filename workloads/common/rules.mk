@@ -6,6 +6,7 @@ SHELL := /bin/bash
 ifeq ($(PARENDI_ROOT),)
   $(info PARENDI_ROOT is not set, setting it myself...)
   PARENDI_ROOT := ${MKFILE_DIR}/../../parendi
+  export PARENDI_ROOT
 endif
 
 VERILATOR_EXEC ?= verilator
