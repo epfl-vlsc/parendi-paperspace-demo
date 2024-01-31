@@ -7,7 +7,7 @@
 **/*.png
 **/*.pdf
 **/*.svg
-workloads/src/rocket/
+workloads/src/
 chipyard.example.simulation.*.tar.gz
 .vscode
 *.tar.gz
